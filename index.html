@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'/>
+    <title>𝗩𝗜𝗣 𝗧𝗥𝗔𝗗𝗘𝗔𝗥 𝟵𝟵𝟵™</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Fredoka+One&display=swap');
+        
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background-color: #fff; font-family: 'Fredoka One', cursive; }
+        
+        #game-frame { width: 100%; height: 100vh; border: none; position: absolute; top: 0; left: 0; z-index: 1; }
+
+        /* ছোট কার্টুন প্যানেল এবং পেছনে গ্লো */
+        #signal-box {
+            position: absolute; top: 10%; left: 10px;
+            width: 130px; /* আরও ছোট সাইজ */
+            padding: 5px; border-radius: 25px;
+            z-index: 9999; cursor: move; touch-action: none;
+            background: #fff;
+            border: 3px solid #ff007f;
+            /* প্যানেলের পেছনে গ্লো ইফেক্ট */
+            box-shadow: 0 0 25px rgba(255, 0, 127, 0.8);
+        }
+
+        .box-inner { 
+            background: #fff;
+            border-radius: 20px; padding: 8px; text-align: center;
+        }
+
+        .brand-title {
+            font-size: 10px; color: #ff007f; margin-bottom: 2px;
+            letter-spacing: 1px;
+        }
+
+        .status-badge {
+            font-size: 7px; padding: 1px 6px; border-radius: 10px; 
+            background: #ff007f; color: #fff; display: inline-block; margin-bottom: 5px;
+        }
+
+        /* লগইন প্যানেল ডিজাইন */
+        #login-panel input {
+            width: 85%; padding: 5px; margin-bottom: 5px; background: #fce4ec; 
+            border: 2px solid #ff007f; color: #000; text-align: center; border-radius: 10px;
+            font-size: 12px; outline: none;
+        }
+
+        .unlock-btn { 
+            background: #ff007f; color: #fff; border: none; padding: 6px; 
+            cursor: pointer; font-weight: 900; border-radius: 10px; width: 100%;
+            font-size: 9px;
+        }
+
+        /* প্রেডিকশন ডিজাইন */
+        .prediction-text { 
+            font-size: 22px; font-weight: 900; font-family: 'Orbitron'; 
+            margin: 5px 0; color: #333;
+        }
+
+        .dual-panel { display: flex; justify-content: space-between; gap: 4px; }
+        .num-box {
+            flex: 1; background: #f0f0f0; border: 1.5px solid #ddd;
+            border-radius: 10px; padding: 3px 0;
+        }
+        .num-label { font-size: 6px; color: #888; display: block; }
+        .num-val { font-size: 16px; font-weight: 900; color: #ff007f; }
+
+        .tg-btn {
+            display: block; background: #00acee; color: #fff; 
+            text-decoration: none; font-size: 8px;
+            padding: 5px; border-radius: 10px; margin-top: 8px;
+        }
+
+        /* টাইমারের পেছনে কোনো কালার নেই */
+        .footer-info { font-size: 8px; color: #555; margin-top: 5px; border-top: 1px solid #eee; padding-top: 5px; }
+        #clock { color: #ff0000; font-weight: 900; }
+
+    </style>
+<link rel="me" href="https://draft.blogger.com/profile/12307871616970034526" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+</head>
+<body oncontextmenu="return false;">
+
+    <iframe id="game-frame" src="https://deshclub1.com/#/register?invitationCode=82576100419"><https://tkclub2.com/#/home/AllLotteryGames/WinGo?id=1></iframe>
+
+    <div id="signal-box">
+        <div class="box-inner">
+            <div class="brand-title">𝗩𝗜𝗣 𝗧𝗥𝗔𝗗𝗘𝗔𝗥 𝟵𝟵𝟵™</div>
+            <div class="status-badge" id="statusBox">𝐋𝐎𝐂𝐊𝐄𝐃</div>
+            
+            <div id="login-panel">
+                <input type="password" id="passInput" placeholder="𝐏𝐈𝐍">
+                <button class="unlock-btn" onclick="activateHack()">𝐋𝐎𝐆𝐈𝐍</button>
+            </div>
+
+            <div id="result-section" style="display:none;">
+                <div class="prediction-text" id="mainRes">---</div>
+                <div class="dual-panel">
+                    <div class="num-box"><span class="num-label">𝐍1</span><span class="num-val" id="n1">?</span></div>
+                    <div class="num-box"><span class="num-label">𝐍2</span><span class="num-val" id="n2">?</span></div>
+                </div>
+                <div class="footer-info">𝐍𝐄𝐗𝐓: <span id="clock">𝟑𝟎</span>𝐬</div>
+            </div>
+
+            <a href="https://t.me/shahidtedarofficial01" target="_blank" class="tg-btn">𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐌</a>
+        </div>
+    </div>
+
+    <script>
+        function activateHack() {
+            if (document.getElementById('passInput').value === "999tem") {
+                document.getElementById('login-panel').style.display = 'none';
+                document.getElementById('result-section').style.display = 'block';
+                document.getElementById('statusBox').innerText = "𝐀𝐂𝐓𝐈𝐕𝐄";
+                document.getElementById('statusBox').style.background = "#00c853";
+                startEngine();
+            } else { alert("WRONG PIN"); }
+        }
+
+        function startEngine() {
+            let lastRes = "";
+
+            function analyze() {
+                const now = new Date();
+                const minutes = now.getMinutes();
+                const seconds = now.getSeconds();
+                
+                // Advanced Loss-Reduction Logic
+                // এটি সময়ের অংকের ওপর ভিত্তি করে একটি প্যাটার্ন ক্যালকুলেট করে
+                let algorithmSeed = (minutes * 60) + seconds;
+                let calculation = Math.floor((algorithmSeed / 7.3) + (minutes % 3));
+                
+                let prediction = "";
+                
+                // ট্রেন্ড এনালিসিস লজিক
+                if (calculation % 2 === 0) {
+                    prediction = (seconds < 25) ? "BIG" : "SMALL";
+                } else {
+                    prediction = (minutes % 2 === 0) ? "SMALL" : "BIG";
+                }
+
+                // টানা ৩ বারের বেশি একই রেজাল্ট আসার হার কমানোর সুরক্ষা লজিক
+                if (prediction === lastRes) {
+                    if (Math.random() > 0.65) {
+                        prediction = (prediction === "BIG") ? "SMALL" : "BIG";
+                    }
+                }
+                lastRes = prediction;
+
+                const resEl = document.getElementById('mainRes');
+                resEl.innerText = prediction;
+                
+                // সঠিক কালার সেটআপ
+                if (prediction === "BIG") {
+                    resEl.style.color = "#ff007f"; // Neon Pink
+                    const bigPool = [5, 6, 7, 8, 9];
+                    bigPool.sort(() => Math.random() - 0.5);
+                    document.getElementById('n1').innerText = bigPool[0];
+                    document.getElementById('n2').innerText = bigPool[1];
+                } else {
+                    resEl.style.color = "#00b0ff"; // Neon Blue
+                    const smallPool = [0, 1, 2, 3, 4];
+                    smallPool.sort(() => Math.random() - 0.5);
+                    document.getElementById('n1').innerText = smallPool[0];
+                    document.getElementById('n2').innerText = smallPool[1];
+                }
+            }
+
+            analyze();
+            setInterval(() => {
+                const now = new Date();
+                const rem = 30 - (now.getSeconds() % 30);
+                document.getElementById('clock').innerText = rem;
+                if (rem === 30) {
+                    document.getElementById('mainRes').innerText = "WAIT";
+                    setTimeout(analyze, 1500);
+                }
+            }, 1000);
+        }
+
+        // স্মুথ ড্র্যাগিং (ব্যাকগ্রাউন্ড ফিক্সড)
+        const box = document.getElementById('signal-box');
+        let active = false, currentX, currentY, initialX, initialY, xOff = 0, yOff = 0;
+
+        function dragStart(e) {
+            let cx = (e.type === "touchstart") ? e.touches[0].clientX : e.clientX;
+            let cy = (e.type === "touchstart") ? e.touches[0].clientY : e.clientY;
+            initialX = cx - xOff; initialY = cy - yOff;
+            if (e.target.closest('.box-inner')) active = true;
+        }
+
+        function dragEnd() { active = false; initialX = currentX; initialY = currentY; }
+
+        function drag(e) {
+            if (active) {
+                e.preventDefault();
+                let cx = (e.type === "touchmove") ? e.touches[0].clientX : e.clientX;
+                let cy = (e.type === "touchmove") ? e.touches[0].clientY : e.clientY;
+                currentX = cx - initialX; currentY = cy - initialY;
+                xOff = currentX; yOff = currentY;
+                box.style.transform = `translate3d(${currentX}px, ${currentY}px, 0)`;
+            }
+        }
+
+        box.addEventListener("touchstart", dragStart, {passive: false});
+        window.addEventListener("touchend", dragEnd, {passive: false});
+        window.addEventListener("touchmove", drag, {passive: false});
+        box.addEventListener("mousedown", dragStart);
+        window.addEventListener("mouseup", dragEnd);
+        window.addEventListener("mousemove", drag);
+    </script>
+</body>
+</html>
